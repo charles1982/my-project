@@ -1,0 +1,9 @@
+
+<h1> hello world</h1>
+<p><%= @message =%></p>
+<%= form_tag("/search", method: "get") do %>
+<%=label_tag(:query, "Search:") %>
+<%=text_field_tag(:query) %>
+<%=submit_tag("Submit") %>
+<%= @colors = [0] %>
+<% end %>

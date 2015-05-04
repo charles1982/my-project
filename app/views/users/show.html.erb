@@ -1,0 +1,7 @@
+<h1>Users#show</h1>
+<p>Welcome New User</p>
+<%= form_tag("/search", method: "get") do %>
+<%=label_tag(:query, "Search:") %>
+<%=text_field_tag(:query) %>
+<%=submit_tag("Submit") %>
+<% end %>
